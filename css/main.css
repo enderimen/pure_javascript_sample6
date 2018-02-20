@@ -9,5 +9,56 @@
 }
 
 body{
+	background-color: #ffee58;	
+	font-family: 'Amatic SC', cursive;
+	font-size: 32px;
+}
 
+.container{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 5%;
+}
+
+h3{
+	margin-bottom: 30px;
+}
+
+input{
+	width: 350px;
+	height: 60px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    padding: 12px 20px 12px 40px;
+    margin-bottom: 20px;
+}
+
+ul li {
+	height: 60px;
+	width: 345px;
+	list-style: none;
+	border: 1px solid gray;
+	background-color: #81d4fa;
+	line-height: 60px;
+	padding-left: 5px;
+	border-radius: 2px;
+	color: #000;
+	font-family: 'Pathway Gothic One', sans-serif;
+	font-size: 16px;
+	-webkit-box-shadow: 8px 9px 8px -4px rgba(99,78,99,0.32);
+	-moz-box-shadow: 8px 9px 8px -4px rgba(99,78,99,0.32);
+	box-shadow: 8px 9px 8px -4px rgba(99,78,99,0.32);
+}
+
+.name{
+	margin-left: 5px;
+}
+
+.population{
+	float: right;
+	margin-right: 5px;
 }

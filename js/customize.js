@@ -1,5 +1,7 @@
 const list =  'https://gist.githubusercontent.com/ozdemirburak/4821a26db048cc0972c1beee48a408de/raw/95970d4f84617736ba111bef07811db2072f7098/cities_of_turkey.json';
 
+const audio = document.querySelector('.sound');
+
 const cities = [];
 
 fetch(list)
@@ -14,6 +16,10 @@ function findMatches(wordToMatch,cities) {
 }
 
 function displayMatches() {
+	
+	audio.currentTime = 0;
+	audio.play();
+
 	const matchArray = findMatches(this.value,cities);
 	const html = matchArray.map(place =>{
 		return `
